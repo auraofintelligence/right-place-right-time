@@ -48,77 +48,76 @@
   const PROJECTS = [
     /* ---- Local: Minjerribah ---- */
     { name: 'Strange but True', scale: 'local', horizon: 'proven', portable: 'in-place', register: 'record',
-      note: 'In-person tech, art and ideas help: market stall, services, paid downloads. The live engine — the payment rails and value-for-value pattern every other tier inherits.',
+      note: 'My market stall and mobile workshop on the island — tech, art and ideas that actually help. Real neighbours, real work, real payment rails. This is where everything else was proven first.',
       href: 'https://auraofintelligence.github.io/strange-but-true/' },
     { name: 'Community Ledger & Honour Board', scale: 'local', horizon: 'active', portable: 'travels', register: 'proposal',
-      note: 'A public support register: who backed what, what service was paid for, which community idea moved forward. A small voluntary experiment climbing toward shared governance.',
+      note: 'The island’s open thank-you book: who helped what move, out in the daylight. Small and voluntary today, growing into something a community can steer together.',
       href: 'https://auraofintelligence.github.io/strange-but-true/community-ledger.html' },
     { name: 'Cosmic Nexus', scale: 'local', horizon: 'active', portable: 'travels', register: 'proposal',
-      note: 'An adventure atlas for careful wonder, travel planning and friendship systems. In development, not pretending to be finished.',
+      note: 'An adventure atlas for careful wonder — trip planning, friendship systems and the strange-but-true corners of the map.',
       href: 'https://auraofintelligence.github.io/strange-but-true-cosmic-nexus/' },
     { name: 'Web3 Sensorium', scale: 'local', horizon: 'horizon', portable: 'travels', register: 'proposal',
-      note: 'A sovereign, living digital twin of a place that its own community can scan into, explore and govern. First instance Minjerribah; the pattern is forkable for any place. A digital twin, not a digital master.',
+      note: 'A living digital twin of a place that its own people can walk into and govern — starting with my island, forkable for yours. A twin, never a master.',
       href: 'https://github.com/auraofintelligence/web3-sensorium' },
     { name: 'Country-first events & film culture', scale: 'local', horizon: 'horizon', portable: 'in-place', register: 'proposal',
-      note: 'Events engine and film festival scaffolds for the island. Anything carrying the Quandamooka name moves only with the right yeses — FPIC is the floor.',
+      note: 'Festival and events scaffolding for the island — moving only at the pace of the right yeses, because consent comes before the poster.',
       href: 'https://github.com/auraofintelligence/quandamooka-film-festival' },
 
     /* ---- National: Australia ---- */
     { name: 'P4A — the civic workbench', scale: 'australia', horizon: 'active', portable: 'travels', register: 'proposal',
-      note: 'A national civic imagination workbench: roots-up democracy, ledgers, law memory, braided economy, referendum rehearsal. A proposed movement and drafting project, not a registered party.',
+      note: 'My love letter to Australian democracy: civic tools, public ledgers, law memory and referendum rehearsal, all free to fork. A drafting project and an invitation — not a party asking for your vote.',
       href: 'https://auraofintelligence.github.io/p4a-xyz-cinema/' },
     { name: 'Luke Catalyst — systems work', scale: 'australia', horizon: 'proven', portable: 'travels', register: 'record',
-      note: 'The working front for speaking and systems architecture: AI automation with heart, lean learning loops, calm software with real outcomes.',
+      note: 'The day job I’m proud of: calm software and AI automation with heart, for founders and communities who want less stress from their tools, not more.',
       href: 'https://github.com/auraofintelligence/meet-luke' },
     { name: 'Grants & civic submissions practice', scale: 'australia', horizon: 'active', portable: 'travels', register: 'record',
-      note: 'Real submissions into real processes — council strategies, grant rounds, open-data proposals. Paid civic craft that works from anywhere in the country.',
+      note: 'Paid civic craft: real grant submissions and council strategy responses that move real projects, written from wherever I’m standing.',
       href: 'https://github.com/auraofintelligence/stradbroke-grants-lab' },
     { name: 'Community wealth & mutuals', scale: 'australia', horizon: 'horizon', portable: 'travels', register: 'proposal',
-      note: 'Lawful pooling, prevention-first mutual care and community wealth patterns, worked from the Moreton Bay ground up.',
+      note: 'Neighbours lawfully pooling risk and wealth so prevention beats premiums — worked out from Moreton Bay, meant for anywhere.',
       href: 'https://github.com/auraofintelligence/moreton-bay-community-wealth-and-mutuals' },
 
     /* ---- Regional: Oceania ---- */
     { name: 'P4A Oceania', scale: 'oceania', horizon: 'active', portable: 'travels', register: 'proposal',
-      note: 'The regional expansion lab: what the civic pattern becomes across the Blue Pacific, held as an offering rather than an export.',
+      note: 'The civic pattern offered across the Blue Pacific — a gift to fork under your own name and your own laws, never an export.',
       href: 'https://auraofintelligence.github.io/p4a-oceania-cinema/' },
     /* ---- Global: the world ---- */
     { name: 'i C. infinity — the music universe', scale: 'world', horizon: 'proven', portable: 'travels', register: 'record',
-      note: 'Four albums deep and still writing: songs as emotional technology, local myth and practical world-building. Fully portable — the music travels wherever Luke does.',
+      note: 'Four albums and counting — songs as emotional technology, island myth and world-building you can hum. The music travels everywhere I do, and plenty of places I don’t.',
       href: 'https://auraofintelligence.github.io/i-C-infinity-music-universe/' },
     { name: 'Project Odyssey', scale: 'world', horizon: 'horizon', portable: 'travels', register: 'proposal',
-      note: 'An eleven-year operational blueprint across roughly 256 countries and territories: short, focused deployments, each visit seeding local networks and gathering signal. The engine behind right place, right time.',
+      note: 'The big dream: eleven years, roughly 256 countries and territories, one or two weeks at a time — arriving useful, leaving tools behind. Sponsors make it real one leg at a time.',
       href: 'https://github.com/auraofintelligence/Australian-world-travel' },
     { name: 'Travel Oracle', scale: 'world', horizon: 'active', portable: 'travels', register: 'proposal',
-      note: 'Self-sovereign travel-life navigation: turns current signals into a ranked next-best-place. The daily instrument of the Odyssey.',
+      note: 'My compass: it reads the live signals and points to the next right place.',
       href: 'https://auraofintelligence.github.io/strange-but-true-travel-oracle/' },
     { name: 'P4A Native Nations', scale: 'world', horizon: 'active', portable: 'travels', register: 'proposal',
-      note: 'The world chapter: treaty atlas, FPIC instruments, and the gold-record versus purple-proposal register system itself. Nations self-onboard; no one is spoken for.',
+      note: 'A world chapter where every nation holds its own pen — treaty maps and consent-first instruments, with refusal honoured as a full answer.',
       href: 'https://auraofintelligence.github.io/p4a-native-nations-cinema/' },
     { name: 'GAJRA Earth', scale: 'world', horizon: 'horizon', portable: 'travels', register: 'proposal',
-      note: 'The Global Association for Joyful Responsible Abundance on Earth — a public build commons and activation path for the ethos that steers everything else here.',
+      note: 'A global association for joyful responsible abundance — the ethos underneath everything I make, growing a commons of its own.',
       href: 'https://github.com/auraofintelligence/gajra-earth-public-hub' },
     { name: 'AI-native indie distribution', scale: 'world', horizon: 'active', portable: 'travels', register: 'record',
-      note: 'A static toolkit for AI-era music release preparation. The artist remains the authority; generated files are handoffs for humans and agents, not automatic publishing commands.',
+      note: 'Release tools that keep indie artists the authority in the AI era — the machine hands you files, it never signs your name.',
       href: 'https://github.com/auraofintelligence/ai-native-indie-distribution' }
   ];
 
   const HORIZON_ORDER = { proven: 0, active: 1, horizon: 2 };
-  const HORIZON_LABEL = { proven: 'Proven', active: 'Active', horizon: 'Horizon' };
-  const PORTABLE_LABEL = { 'in-place': 'In place', travels: 'Travels' };
-  const REGISTER_LABEL = { record: 'Record', proposal: 'Proposal' };
+  /* One chip per card, written for a visitor, not a taxonomist.
+     Colour still carries the register: gold = real today, purple = becoming.
+     The full four-axis breakdown lives on register.html for anyone who wants it. */
+  const HORIZON_LABEL = { proven: 'Live today', active: 'Alive & growing', horizon: 'An open invitation' };
 
   const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
   const card = (p) => `
     <article class="project-card panel-${p.register}">
       <p class="chip-row">
-        <span class="register-chip chip-${p.register}">${REGISTER_LABEL[p.register]}</span>
-        <span class="register-chip chip-plain">${HORIZON_LABEL[p.horizon]}</span>
-        <span class="register-chip chip-plain">${PORTABLE_LABEL[p.portable]}</span>
+        <span class="register-chip chip-${p.register}">${HORIZON_LABEL[p.horizon]}</span>
       </p>
       <h3>${esc(p.name)}</h3>
       <p>${esc(p.note)}</p>
-      <div class="source-links"><a href="${p.href}" target="_blank" rel="noopener">Open</a></div>
+      <div class="source-links"><a href="${p.href}" target="_blank" rel="noopener">Step inside</a></div>
     </article>`;
 
   document.querySelectorAll('[data-project-grid]').forEach((grid) => {

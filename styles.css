@@ -3067,3 +3067,10 @@ html:not(.js) .journey-line .waypoint { opacity: .9; }
 .kintsugi-seam.is-drawn .seam-path { stroke-dashoffset: 0; }
 html:not(.js) .kintsugi-seam .seam-path { stroke-dashoffset: 0; }
 @media (prefers-reduced-motion: reduce) { .kintsugi-seam .seam-path { stroke-dashoffset: 0; transition: none; } }
+
+/* Song lines — Luke's own lyrics as the emotional thread.
+   Gold rendered as light, attribution whispered underneath. */
+.song-line { display: block; margin: 1.4rem 0 0; }
+.song-line q { display: block; max-width: 34ch; font-family: var(--font-display); font-size: clamp(1.1rem, 2.2vw, 1.55rem); font-weight: 680; font-style: italic; line-height: 1.25; color: var(--gold); text-shadow: 0 0 32px rgba(201, 162, 75, .38); quotes: "\201C" "\201D"; text-wrap: balance; }
+.song-line small { display: block; margin-top: .55rem; font-family: var(--font-mono); font-size: .7rem; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); }
+.statement-card .song-line { margin-top: 1.2rem; padding-top: 1.1rem; border-top: 1px solid rgba(201, 162, 75, .2); }
