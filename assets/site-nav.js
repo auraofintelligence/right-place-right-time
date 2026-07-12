@@ -1,5 +1,5 @@
 /*
- * Right Place, Right Time — site chrome.
+ * Right Place, Right Time: site chrome.
  * One data file describes every public room. The header, full-screen index,
  * breadcrumbs and footer explore-columns are all generated from it, so new
  * pages only need an entry here to appear everywhere.
@@ -19,7 +19,7 @@
       id: 'start',
       num: '01',
       label: 'Start here',
-      blurb: 'The one canonical core that all four tiers inherit — and the seams it openly carries.',
+      blurb: 'The one canonical core that all four tiers inherit, and the seams it openly carries.',
       links: [
         { href: 'index.html', title: 'Home', note: 'The core: one person, one body of work, four doors.' },
         { href: 'register.html', title: 'The register', note: 'Every project on four axes, provisionally shelved. Luke holds the pen.' },
@@ -32,10 +32,10 @@
       label: 'The four tiers',
       blurb: 'Thin geographic skins over the same core. Proof starts local and travels outward.',
       links: [
-        { href: 'local.html', title: 'Local — Minjerribah', note: 'The live engine: stall, services, ledger. The reference implementation.' },
-        { href: 'australia.html', title: 'National — Australia', note: 'Civic workbench, systems craft and submissions that travel.' },
-        { href: 'oceania.html', title: 'Regional — Oceania', note: 'The thinnest shelf, on purpose. An offering, not an export.' },
-        { href: 'world.html', title: 'Global — the world', note: 'Music, the Odyssey blueprint and the planetary frames.' }
+        { href: 'local.html', title: 'Local: Minjerribah', note: 'The live engine: stall, services, ledger. The reference implementation.' },
+        { href: 'australia.html', title: 'National: Australia', note: 'Civic workbench, systems craft and submissions that travel.' },
+        { href: 'oceania.html', title: 'Regional: Oceania', note: 'The thinnest shelf, on purpose. An offering, not an export.' },
+        { href: 'world.html', title: 'Global: the world', note: 'Music, the Odyssey blueprint and the planetary frames.' }
       ]
     },
     {
@@ -46,18 +46,18 @@
       links: [
         { href: 'support.html', title: 'Support & patronage', note: 'One-off, steady patron, right-place sponsor. Structure first, amounts are a seam.' },
         { href: 'support.html#participate', title: 'Give time, not money', note: 'Unpaid on its face: what it asks, what you get back.' },
-        { href: 'support.html#honour-board', title: 'Honour Board', note: 'The public support register — empty on purpose, so far.' }
+        { href: 'support.html#honour-board', title: 'Honour Board', note: 'The public support register: empty on purpose, so far.' }
       ]
     }
   ];
 
   const EXTERNAL = [
     { href: 'https://github.com/auraofintelligence/right-place-right-time', title: 'Fork on GitHub' },
-    { href: 'https://auraofintelligence.github.io/strange-but-true/', title: 'Strange but True — the live local engine' },
-    { href: 'https://auraofintelligence.github.io/i-C-infinity-music-universe/', title: 'i C. infinity — the music universe' },
-    { href: 'https://auraofintelligence.github.io/p4a-xyz-cinema/', title: 'P4A — the civic workbench' },
-    { href: 'https://iseeinfinity.com', title: 'iseeinfinity.com — existing front' },
-    { href: 'https://lukecatalyst.com', title: 'lukecatalyst.com — existing front' }
+    { href: 'https://auraofintelligence.github.io/strange-but-true/', title: 'Strange but True: the live local engine' },
+    { href: 'https://auraofintelligence.github.io/i-C-infinity-music-universe/', title: 'i C. infinity: the music universe' },
+    { href: 'https://auraofintelligence.github.io/p4a-xyz-cinema/', title: 'P4A: the civic workbench' },
+    { href: 'https://iseeinfinity.com', title: 'iseeinfinity.com: existing front' },
+    { href: 'https://lukecatalyst.com', title: 'lukecatalyst.com: existing front' }
   ];
 
   /* Normalise: strip /index.html and .html so clean URLs match too. */

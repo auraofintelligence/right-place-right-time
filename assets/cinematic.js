@@ -1,5 +1,5 @@
 /*
- * Cinematic layer — pointer aura, card tilt + sheen, counter roll-ups,
+ * Cinematic layer: pointer aura, card tilt + sheen, counter roll-ups,
  * journey-line and kintsugi-seam drawing.
  * Every effect is additive: no JS, no fine pointer, or
  * prefers-reduced-motion all degrade to the calm version.
@@ -12,7 +12,7 @@
     return r.top < window.innerHeight && r.bottom > 0;
   };
 
-  /* Journey line — draw once the page settles. The timeout fallback
+  /* Journey line: draw once the page settles. The timeout fallback
      covers backgrounded tabs where rAF is suspended. */
   document.querySelectorAll('.journey-line').forEach((line) => {
     const draw = () => line.classList.add('is-drawn');
@@ -20,7 +20,7 @@
     setTimeout(draw, 600);
   });
 
-  /* Kintsugi seams — the crack draws in gold when it enters view */
+  /* Kintsugi seams: the crack draws in gold when it enters view */
   const seams = Array.from(document.querySelectorAll('.kintsugi-seam'));
   const drawSeams = () => seams.forEach((s) => {
     if (!s.classList.contains('is-drawn') && inView(s)) s.classList.add('is-drawn');
@@ -28,7 +28,7 @@
   drawSeams();
   window.addEventListener('scroll', drawSeams, { passive: true });
 
-  /* Counter roll-ups — numbers earn their size */
+  /* Counter roll-ups: numbers earn their size */
   const counters = Array.from(document.querySelectorAll('[data-count]'));
   const runCounter = (el) => {
     if (el.dataset.done) return;
@@ -53,7 +53,7 @@
 
   if (!fine || reduced) return;
 
-  /* Cursor aura — soft gold-teal light follows the pointer */
+  /* Cursor aura: soft gold-teal light follows the pointer */
   const aura = document.createElement('div');
   aura.className = 'cursor-aura';
   aura.setAttribute('aria-hidden', 'true');
@@ -71,7 +71,7 @@
     });
   }, { passive: true });
 
-  /* Card tilt + sheen — subtle, ±5 degrees, resets on leave */
+  /* Card tilt + sheen: subtle, ±5 degrees, resets on leave */
   document.querySelectorAll('.feature-grid article, .signal, .statement-card').forEach((el) => {
     el.setAttribute('data-tilt', '');
     el.addEventListener('pointermove', (e) => {

@@ -520,7 +520,7 @@ body[data-page="constitution"] .source-links a {
 .reveal.is-visible { opacity: 1; transform: none; filter: none; }
 @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; filter: none; } }
 /* No-JS fallback: reveal animation only runs when site-nav.js has stamped the html.js class.
-   Without JavaScript every panel is simply visible — low-bandwidth readers first. */
+   Without JavaScript every panel is simply visible: low-bandwidth readers first. */
 html:not(.js) .reveal { opacity: 1; transform: none; filter: none; }
 @media (max-width: 1080px) { .portal-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .signal-deck { grid-template-columns: repeat(2, minmax(0, 1fr)); } .home-door-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .page-shell, .rabbit-panel, .section-heading, .feature-grid.three { grid-template-columns: 1fr; } .page-media { position: static; } .site-nav { display: none; } }
 @media (max-width: 1080px) { .home-hero-content, .music-hero-content { grid-template-columns: 1fr; } .home-phone-panel, .music-phone-panel { justify-self: start; width: min(100%, 26rem); } }
@@ -2891,13 +2891,13 @@ footer.site-footer:not(.state-footer) { display: grid; gap: 1.7rem; padding: 2.6
 
 
 /* ============================================================
-   RIGHT PLACE, RIGHT TIME — patronage chapter theme, take two.
+   RIGHT PLACE, RIGHT TIME: patronage chapter theme, take two.
    Appended over the family cinema base, never edited into it.
    Grounds and light from Aura O.i. (deep teal, abyss, gold-as-
    light); signals from GAJRA Earth (blue, green, coral). Purple
-   is no longer wallpaper — it is reserved for one job only:
+   is no longer wallpaper. It is reserved for one job only:
    the proposal register. Gold = proven record, solid border.
-   Purple = proposal, dashed border — react, revise, refuse.
+   Purple = proposal, dashed border: react, revise, refuse.
    ============================================================ */
 :root {
   --void: #05100d;
@@ -2937,7 +2937,7 @@ body::before {
 ::selection { background: var(--gold); color: #1e211d; }
 h1, h2 { text-shadow: 0 0 44px rgba(201, 162, 75, .38); }
 
-/* Gold renders as light — the primary action is a bar of it */
+/* Gold renders as light: the primary action is a bar of it */
 .button-primary { background: linear-gradient(135deg, #f7e6b6, #e3b95e 48%, #a87f2f); color: #1e211d; box-shadow: 0 8px 32px rgba(201, 162, 75, .4); }
 .button-primary:hover { box-shadow: 0 14px 48px rgba(238, 217, 160, .55); }
 .button-secondary:hover { border-color: rgba(238, 217, 160, .6); background: rgba(238, 217, 160, .09); }
@@ -2973,7 +2973,7 @@ h1, h2 { text-shadow: 0 0 44px rgba(201, 162, 75, .38); }
 .chip-plain { border: 1px solid rgba(238, 217, 160, .2); color: var(--muted); background: rgba(255, 255, 255, .04); }
 .chip-plain::before { display: none; }
 
-/* -------- Register panels — the load-bearing distinction -------- */
+/* -------- Register panels: the load-bearing distinction -------- */
 .panel-record { border-left: 3px solid var(--record) !important; }
 .panel-proposal { border-left: 3px dashed var(--proposal) !important; background: linear-gradient(145deg, rgba(63, 15, 117, .26), rgba(8, 22, 19, .72)); }
 .panel-proposal .eyebrow { color: #dd9cff; }
@@ -3011,7 +3011,7 @@ h1, h2 { text-shadow: 0 0 44px rgba(201, 162, 75, .38); }
 .seam-log strong { display: block; color: white; margin-bottom: .3rem; }
 .seam-log small { display: block; margin-top: .45rem; font-family: var(--font-mono); font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; color: rgba(191, 205, 186, .8); }
 
-/* Honour Board — empty on purpose */
+/* Honour Board: empty on purpose */
 .honour-board { width: min(100%, 46rem); margin-inline: auto; padding: clamp(1.4rem, 4vw, 2.4rem); border: 2px dashed rgba(201, 162, 75, .45); border-radius: var(--radius); background: rgba(238, 217, 160, .05); text-align: center; }
 .honour-board h3 { color: var(--record); }
 .honour-board p { color: var(--muted); }
@@ -3021,12 +3021,12 @@ h1, h2 { text-shadow: 0 0 44px rgba(201, 162, 75, .38); }
 .back-to-top.is-shown { opacity: 1; pointer-events: auto; }
 
 /* ============================================================
-   Cinematic layer — aura, tilt, journey line, seams, counters.
+   Cinematic layer: aura, tilt, journey line, seams, counters.
    Every effect degrades to nothing: no JS, no hover, or
    prefers-reduced-motion all get the calm version.
    ============================================================ */
 
-/* Cursor aura — a soft gold-teal light that follows the pointer */
+/* Cursor aura: a soft gold-teal light that follows the pointer */
 .cursor-aura { position: fixed; inset: 0; z-index: 1; pointer-events: none; opacity: 0; transition: opacity .6s ease; background: radial-gradient(34rem circle at var(--cx, 50%) var(--cy, 30%), rgba(238, 217, 160, .07), rgba(127, 216, 180, .045) 42%, transparent 72%); }
 .cursor-aura.is-active { opacity: 1; }
 @media (hover: none), (prefers-reduced-motion: reduce) { .cursor-aura { display: none; } }
@@ -3037,7 +3037,7 @@ h1, h2 { text-shadow: 0 0 44px rgba(201, 162, 75, .38); }
 [data-tilt].is-tilting::after { opacity: 1; }
 @media (hover: none), (prefers-reduced-motion: reduce) { [data-tilt]::after { display: none; } }
 
-/* The journey line — a gold route drawing itself across the hero */
+/* The journey line: a gold route drawing itself across the hero */
 .journey-line { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
 .journey-line svg { width: 100%; height: 100%; }
 .journey-line .trail-ghost { fill: none; stroke: rgba(238, 217, 160, .16); stroke-width: 1.4; stroke-dasharray: .008 .006; }
@@ -3060,7 +3060,7 @@ html:not(.js) .journey-line .waypoint { opacity: .9; }
   .journey-line.is-drawn .beacon-ring { animation: none; }
 }
 
-/* Kintsugi seam divider — the crack, coded with gold */
+/* Kintsugi seam divider: the crack, coded with gold */
 .kintsugi-seam { width: min(100%, var(--max)); margin: 0 auto; padding: 0 clamp(1rem, 4vw, 3rem); }
 .kintsugi-seam svg { display: block; width: 100%; height: 2.6rem; filter: drop-shadow(0 0 6px rgba(238, 217, 160, .45)); }
 .kintsugi-seam .seam-path { fill: none; stroke: var(--gold-deep); stroke-width: 2; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset 1.8s var(--ease-out); }
@@ -3068,7 +3068,7 @@ html:not(.js) .journey-line .waypoint { opacity: .9; }
 html:not(.js) .kintsugi-seam .seam-path { stroke-dashoffset: 0; }
 @media (prefers-reduced-motion: reduce) { .kintsugi-seam .seam-path { stroke-dashoffset: 0; transition: none; } }
 
-/* Song lines — Luke's own lyrics as the emotional thread.
+/* Song lines: Luke's own lyrics as the emotional thread.
    Gold rendered as light, attribution whispered underneath. */
 .song-line { display: block; margin: 1.4rem 0 0; }
 .song-line q { display: block; max-width: 34ch; font-family: var(--font-display); font-size: clamp(1.1rem, 2.2vw, 1.55rem); font-weight: 680; font-style: italic; line-height: 1.25; color: var(--gold); text-shadow: 0 0 32px rgba(201, 162, 75, .38); quotes: "\201C" "\201D"; text-wrap: balance; }

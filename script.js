@@ -1,12 +1,12 @@
 /*
- * Right Place, Right Time — page behaviour.
+ * Right Place, Right Time: page behaviour.
  * Lean on purpose: scroll-reveal and a back-to-top button.
  * Low-bandwidth readers first: without JS, styles.css shows every
  * .reveal panel via html:not(.js), and register.html carries the
  * full project register as static text.
  */
 (() => {
-  /* Scroll reveal — runs after core.js has rendered any data-driven grids.
+  /* Scroll reveal: runs after core.js has rendered any data-driven grids.
      Anything already in the viewport shows immediately (no above-the-fold
      pop-in, and no reliance on observer delivery); the observer only
      handles what scrolls in later. */
