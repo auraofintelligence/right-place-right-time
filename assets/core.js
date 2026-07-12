@@ -57,29 +57,29 @@
       note: 'An adventure atlas for careful wonder: trip planning, friendship systems and the strange-but-true corners of the map.',
       href: 'https://auraofintelligence.github.io/strange-but-true-cosmic-nexus/' },
     { name: 'Web3 Sensorium', scale: 'local', horizon: 'horizon', portable: 'travels', register: 'proposal',
-      note: 'A living digital twin of a place that its own people can walk into and govern, starting with my island, forkable for yours. A twin, never a master.',
-      href: 'https://github.com/auraofintelligence/web3-sensorium' },
+      note: 'A living digital copy of a place that its own people can walk through and have a real say over, starting with my island. Any community could build their own version. A twin, never a master.',
+      href: 'https://auraofintelligence.github.io/straddie-digital-twin-builders/' },
     { name: 'Country-first events & film culture', scale: 'local', horizon: 'horizon', portable: 'in-place', register: 'proposal',
-      note: 'Festival and events scaffolding for the island: moving only at the pace of the right yeses, because consent comes before the poster.',
-      href: 'https://github.com/auraofintelligence/quandamooka-film-festival' },
+      note: 'Festival and events planning for the island: moving only at the pace of the right yeses, because consent comes before the poster.',
+      href: 'https://auraofintelligence.github.io/quandamooka-film-festival/' },
 
     /* ---- National: Australia ---- */
     { name: 'P4A: the civic workbench', scale: 'australia', horizon: 'active', portable: 'travels', register: 'proposal',
-      note: 'My love letter to Australian democracy: civic tools, public ledgers, law memory and referendum rehearsal, all free to fork. A drafting project and an invitation, not a party asking for your vote.',
+      note: 'My love letter to Australian democracy: civic tools, public records and referendum rehearsal, free for anyone to use. A drafting project and an invitation, not a party asking for your vote.',
       href: 'https://auraofintelligence.github.io/p4a-xyz-cinema/' },
     { name: 'Luke Catalyst: systems work', scale: 'australia', horizon: 'proven', portable: 'travels', register: 'record',
       note: 'The day job I’m proud of: calm software and AI automation with heart, for founders and communities who want less stress from their tools, not more.',
-      href: 'https://github.com/auraofintelligence/meet-luke' },
+      href: 'https://auraofintelligence.github.io/meet-luke/' },
     { name: 'Grants & civic submissions practice', scale: 'australia', horizon: 'active', portable: 'travels', register: 'record',
       note: 'Paid civic craft: real grant submissions and council strategy responses that move real projects, written from wherever I’m standing.',
-      href: 'https://github.com/auraofintelligence/stradbroke-grants-lab' },
+      href: 'https://auraofintelligence.github.io/stradbroke-grants-lab/' },
     { name: 'Community wealth & mutuals', scale: 'australia', horizon: 'horizon', portable: 'travels', register: 'proposal',
       note: 'Neighbours lawfully pooling risk and wealth so prevention beats premiums: worked out from Moreton Bay, meant for anywhere.',
-      href: 'https://github.com/auraofintelligence/moreton-bay-community-wealth-and-mutuals' },
+      href: 'https://auraofintelligence.github.io/moreton-bay-community-wealth-and-mutuals/' },
 
     /* ---- Regional: Oceania ---- */
     { name: 'P4A Oceania', scale: 'oceania', horizon: 'active', portable: 'travels', register: 'proposal',
-      note: 'The civic pattern offered across the Blue Pacific: a gift to fork under your own name and your own laws, never an export.',
+      note: 'The civic pattern offered across the Blue Pacific: a gift for any community to use under their own name and their own laws, never something sold to them.',
       href: 'https://auraofintelligence.github.io/p4a-oceania-cinema/' },
     /* ---- Global: the world ---- */
     { name: 'i C. infinity: the music universe', scale: 'world', horizon: 'proven', portable: 'travels', register: 'record',
@@ -87,7 +87,7 @@
       href: 'https://auraofintelligence.github.io/i-C-infinity-music-universe/' },
     { name: 'Project Odyssey', scale: 'world', horizon: 'horizon', portable: 'travels', register: 'proposal',
       note: 'The big dream: eleven years, roughly 256 countries and territories, one or two weeks at a time, arriving useful, leaving tools behind. Sponsors make it real one leg at a time.',
-      href: 'https://github.com/auraofintelligence/Australian-world-travel' },
+      href: 'https://auraofintelligence.github.io/Australian-world-travel/strategy.html' },
     { name: 'Travel Oracle', scale: 'world', horizon: 'active', portable: 'travels', register: 'proposal',
       note: 'My compass: it reads the live signals and points to the next right place.',
       href: 'https://auraofintelligence.github.io/strange-but-true-travel-oracle/' },
@@ -95,11 +95,11 @@
       note: 'A world chapter where every nation holds its own pen: treaty maps and consent-first instruments, with refusal honoured as a full answer.',
       href: 'https://auraofintelligence.github.io/p4a-native-nations-cinema/' },
     { name: 'GAJRA Earth', scale: 'world', horizon: 'horizon', portable: 'travels', register: 'proposal',
-      note: 'A global association for joyful responsible abundance: the ethos underneath everything I make, growing a commons of its own.',
-      href: 'https://github.com/auraofintelligence/gajra-earth-public-hub' },
+      note: 'A global group for joyful responsible abundance: the values underneath everything I make, growing into a community of its own.',
+      href: 'https://auraofintelligence.github.io/gajra-earth-public-hub/' },
     { name: 'AI-native indie distribution', scale: 'world', horizon: 'active', portable: 'travels', register: 'record',
-      note: 'Release tools that keep indie artists the authority in the AI era: the machine hands you files, it never signs your name.',
-      href: 'https://github.com/auraofintelligence/ai-native-indie-distribution' }
+      note: 'Tools that keep indie musicians in charge in the AI era: the technology hands you files, it never signs your name for you.',
+      href: 'https://auraofintelligence.github.io/ai-native-indie-distribution/' }
   ];
 
   const HORIZON_ORDER = { proven: 0, active: 1, horizon: 2 };

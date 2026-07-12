@@ -52,12 +52,12 @@
   ];
 
   const EXTERNAL = [
-    { href: 'https://github.com/auraofintelligence/right-place-right-time', title: 'Fork on GitHub' },
+    { href: 'https://github.com/auraofintelligence/right-place-right-time', title: 'How this site is built' },
     { href: 'https://auraofintelligence.github.io/strange-but-true/', title: 'Strange but True: the live local engine' },
     { href: 'https://auraofintelligence.github.io/i-C-infinity-music-universe/', title: 'i C. infinity: the music universe' },
     { href: 'https://auraofintelligence.github.io/p4a-xyz-cinema/', title: 'P4A: the civic workbench' },
-    { href: 'https://iseeinfinity.com', title: 'iseeinfinity.com: existing front' },
-    { href: 'https://lukecatalyst.com', title: 'lukecatalyst.com: existing front' }
+    { href: 'https://iseeinfinity.com', title: 'iseeinfinity.com: my other website' },
+    { href: 'https://lukecatalyst.com', title: 'lukecatalyst.com: my other website' }
   ];
 
   /* Normalise: strip /index.html and .html so clean URLs match too. */
