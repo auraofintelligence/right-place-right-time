@@ -7,31 +7,31 @@
  */
 (() => {
   /* Scroll reveal: runs after core.js has rendered any data-driven grids.
-     Anything already in the viewport shows immediately (no above-the-fold
-     pop-in, and no reliance on observer delivery); the observer only
-     handles what scrolls in later. */
-  const revealables = Array.from(document.querySelectorAll('.reveal'));
-  const inView = (el) => {
-    const r = el.getBoundingClientRect();
-    return r.top < window.innerHeight && r.bottom > 0;
+     Deliberately NOT IntersectionObserver. Content visibility must never
+     depend on an observer callback arriving: browsers throttle or delay IO
+     in background tabs, prerendered pages and low-power modes, which can
+     leave a panel at opacity 0 for the whole visit. A plain geometry sweep
+     on scroll and resize gives the same effect with nothing that can
+     strand content. */
+  const pending = new Set(document.querySelectorAll('.reveal, .kintsugi-seam'));
+  const show = (el) => el.classList.add(el.classList.contains('kintsugi-seam') ? 'is-drawn' : 'is-visible');
+  const sweep = () => {
+    if (!pending.size) { return; }
+    /* Only the top edge is tested, so anything scrolled past stays revealed:
+       an anchor jump or a restored scroll position cannot skip a block. */
+    const line = window.innerHeight * 0.92;
+    pending.forEach((el) => {
+      const r = el.getBoundingClientRect();
+      if (r.top < line) { show(el); pending.delete(el); }
+    });
   };
-  const pending = revealables.filter((el) => {
-    if (inView(el)) { el.classList.add('is-visible'); return false; }
-    return true;
-  });
-  if (!('IntersectionObserver' in window)) {
-    pending.forEach((el) => el.classList.add('is-visible'));
-  } else {
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          io.unobserve(entry.target);
-        }
-      });
-    }, { rootMargin: '0px 0px -6% 0px' });
-    pending.forEach((el) => io.observe(el));
-  }
+  sweep();
+  window.addEventListener('scroll', sweep, { passive: true });
+  window.addEventListener('resize', sweep, { passive: true });
+  window.addEventListener('load', sweep);
+  /* Late-layout safety net (fonts, images and injected grids shifting geometry). */
+  setTimeout(sweep, 400);
+  setTimeout(sweep, 1500);
 
   /* Back to top */
   const top = document.createElement('button');
